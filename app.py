@@ -22,7 +22,7 @@ colors={
 'test':'11111111'
 }
 app.config.suppress_callback_exceptions=True
-df = pd.read_csv('http://192.168.8.102/projects/workout/KPI_overview/KPI_overview.csv')
+df = pd.read_csv('https://onedrive.live.com/?authkey=%21ACyIEuffdC0HHDE&cid=E135A978EDAA7CB8&id=E135A978EDAA7CB8%21972&parId=E135A978EDAA7CB8%21971&o=OneUp')
 availableRNCname= df['RNC name'].unique()
 app.layout = html.Div([
 html.Div([
