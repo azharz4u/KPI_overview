@@ -22,13 +22,14 @@ colors={
 'test':'11111111'
 }
 app.config.suppress_callback_exceptions=True
-df = pd.read_csv('https://onedrive.live.com/?authkey=%21ACyIEuffdC0HHDE&cid=E135A978EDAA7CB8&id=E135A978EDAA7CB8%21972&parId=E135A978EDAA7CB8%21971&o=OneUp')
+df = pd.read_csv('https://raw.githubusercontent.com/azharz4u/KPI_overview/master/KPI_overview.csv')
 availableRNCname= df['RNC name'].unique()
 app.layout = html.Div([
 html.Div([
 dcc.Dropdown(
 id='mydropdown',
 options=[{'label': i, 'value': i} for i in availableRNCname],
+value=['N104', 'N103','N105'],
 multi=True),
 html.Div([
 html.H1('RRC Connection setup SR'),
